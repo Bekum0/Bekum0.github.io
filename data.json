@@ -451,6 +451,136 @@
                 "link": "https://cytomine.uclouvain.be/#/project/47750146/image/366395219",
                 "name": "D112 - Mélanome malin",
                 "bodyPart": "Peau"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604139",
+                "name": "D020 - Kyste odontogène calcifiant",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604043",
+                "name": "D021 - Kyste périapical",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604121",
+                "name": "D022 - Kératokyste",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604099",
+                "name": "D023 - Fibrome améloblastique",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604077",
+                "name": "D024 - Améloblastome",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604057",
+                "name": "D025 - Kyste folliculaire",
+                "bodyPart": "Dent"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/374120861",
+                "name": "D001 - Sjögren",	
+                "bodyPart": "Glande salivaire"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604729",
+                "name": "D002 - Mucocele",
+                "bodyPart": "Lèvre"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604745",
+                "name": "D003 - Tumeur de Warthin",
+                "bodyPart": "Glande salivaire"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604873",
+                "name": "D004 - Cylindrome",
+                "bodyPart": "Glande salivaire"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604887",
+                "name": "D005 - Sialadenite chronique",
+                "bodyPart": "Glande salivaire"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52604497/image/366415974",
+                "name": "D006 - Tumeur mixte",
+                "bodyPart": "Glande salivaire"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53192012",
+                "name": "D007 - Ostéosarcome",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/72526325",
+                "name": "D045 - Kyste anévrysmal",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53191986",
+                "name": "D082 - Histiocytose langerhansienne",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53191948",
+                "name": "D084 - Ostéite chronique",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276700",
+                "name": "D085 - Ostéonecrose sur bisphosphonate",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276682",
+                "name": "D092 - Plasmocytome",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276672",
+                "name": "D088 - Fibrome ossifiant",
+                "bodyPart": "Os"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605387",
+                "name": "D120 - Sarcoïdose",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605365",
+                "name": "D229 - Ganglion normal",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605295",
+                "name": "D411 - Maladie griffe du chat",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/72084156",
+                "name": "D026 - Leucémie lymphoïde chronique",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605261",
+                "name": "D027 - Lymphome folliculaire",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605241",
+                "name": "D030 - Lymphome Hodgkinien",
+                "bodyPart": "Ganglion lympathique"
+            },
+            {
+                "link": "https://cytomine.uclouvain.be/#/project/52605157/image/75051303",
+                "name": "D101 - Métastase ganglionnaire d'un carcinome épidermoïde",
+                "bodyPart": "Ganglion lympathique"
             }
         ]
     }
