@@ -328,11 +328,6 @@
                 "bodyPart": "Peau"
             },
             {
-                "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45661106",
-                "name": "D039 - Carie",
-                "bodyPart": "Dent"
-            },
-            {
                 "link": "https://cytomine.uclouvain.be/#/project/45658455/image/368800341",
                 "name": "D081 - Carcinome épidermoïde in situ",
                 "bodyPart": "Bouche"
@@ -340,21 +335,6 @@
             {
                 "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45665705",
                 "name": "D096 - Epulis fibromateux",
-                "bodyPart": ""
-            },
-            {
-                "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45658954",
-                "name": "D097 - Biopsie",
-                "bodyPart": ""
-            },
-            {
-                "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45659499",
-                "name": "D097 - Biopsie immunohistochimie cytokératine",
-                "bodyPart": ""
-            },
-            {
-                "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45659927",
-                "name": "D097 - Biopsie immunohistochimie vimentine",
                 "bodyPart": ""
             },
             {
