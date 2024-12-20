@@ -92,6 +92,8 @@ function main() {
 }
 
 let isOktoClose = false;
+let timer = null;
+let mywindow = null;
 
 function showFrame(activeFrameData, randomIndex) {
     let link = activeFrameData["link"];
@@ -104,18 +106,10 @@ function showFrame(activeFrameData, randomIndex) {
     if (organ == "")
         organ = "Inconnu";
 
-    let mywindow = window.open(link, "_blank", "location=no,menubar=no,scrollbars=no,status=no,titlebar=no,toolbar=no,fullscreen=yes");
+    mywindow = window.open(link, "_blank", "location=no,menubar=no,scrollbars=no,status=no,titlebar=no,toolbar=no,fullscreen=yes");
 
     // check if is closed
-    let timer = setInterval(function() {
-        if (mywindow.closed && !isOktoClose) {
-            mywindow = window.open(link, "_blank", "location=no,menubar=no,scrollbars=no,status=no,titlebar=no,toolbar=no,fullscreen=yes");
-        }
-
-        if (isOktoClose) {
-            clearInterval(timer);
-        }
-    }, 1000);
+    createTimer(link);
 
     let coupeHtml = "🌟Coupe actuelle : "+currentFrameIndex+"/"+numberOfData+"🌟<br/><br/>";
 
@@ -127,7 +121,8 @@ function showFrame(activeFrameData, randomIndex) {
         html: `🫀 Organe : <strong>${organ}</strong><br/><br/>${(mode == "quizlet" || mode == "random1")?coupeHtml:""}
         <div class="d-flex justify-content-center">`+
         `<div class="me-2"><button type="button" class="btn btn-primary" id="showAnswer">Voir la réponse</button></div>`+
-        `<div class=""><button type="button" class="btn btn-warning" id="closeWindow">Fermer la fenêtre</button></div>`+
+        `<div class="me-2"><button type="button" class="btn btn-warning" id="closeWindow">Fermer la fenêtre</button></div>`+
+        `<div class=""><button type="button" class="btn btn-info" id="openAgain">Ré-ouvrir la coupe</button></div>`+
         `</div>`,
     });
 
@@ -195,6 +190,29 @@ function showFrame(activeFrameData, randomIndex) {
         isOktoClose = true;
         mywindow.close();
     });
+
+    $("#openAgain").click(function() {
+        isOktoClose = false;
+
+        if (timer)
+            clearInterval(timer);
+
+        createTimer(link);
+        mywindow = window.open(link, "_blank", "location=no,menubar=no,scrollbars=no,status=no,titlebar=no,toolbar=no,fullscreen=yes");
+    });
+}
+
+function createTimer(link)
+{
+    timer = setInterval(function() {
+        if (mywindow.closed && !isOktoClose) {
+            mywindow = window.open(link, "_blank", "location=no,menubar=no,scrollbars=no,status=no,titlebar=no,toolbar=no,fullscreen=yes");
+        }
+
+        if (isOktoClose) {
+            clearInterval(timer);
+        }
+    }, 1000);
 }
 
 function showEndGame() {
