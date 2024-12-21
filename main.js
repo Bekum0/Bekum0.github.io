@@ -275,7 +275,10 @@ function createTimer(link)
 }
 
 function showEndGame() {
-    sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Mode", mode); // logs sur discord de fin de
+    if (mode == "random1")
+        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Score", score); // logs sur discord de fin de
+    else
+        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Mode", mode); // logs sur discord de fin de
 
     Swal.fire({
         title: "Fin du jeu",
