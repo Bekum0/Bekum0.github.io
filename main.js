@@ -27,21 +27,78 @@ let currentFrameIndex = 0;
 let quizletFrames = [];
 let score = 0;
 
+async function sendWebHook(link, name, color, title, customTextTitle, customInfo)
+{
+        // Génère la date actuelle au format lisible.
+    const currentDate = new Date().toLocaleString();
+
+    // Structure de l'embed pour Discord.
+    const embed = {
+        username: "Anatomologiste pathologique", // Nom de l'expéditeur (custom).
+        avatar_url: "https://via.placeholder.com/150", // URL d'un avatar (optionnel).
+        embeds: [
+            {
+                title: title,
+                color: color, // Couleur en format décimal (ex. 0x3498db).
+                fields: [
+                    { name: "Prénom", value: name, inline: true },
+                    { name: "Date", value: currentDate, inline: true },
+                    { name: customTextTitle, value: customInfo, inline: false },
+                ],
+                footer: {
+                    text: "Site d'entrainement anatomie pathologique", // Texte du footer.
+                },
+                timestamp: new Date().toISOString(), // Timestamp dans l'embed.
+            },
+        ],
+    };
+
+    // Envoi du webhook via fetch.
+    try {
+        const response = await fetch(link, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(embed),
+        });
+
+        if (response.ok) {
+            console.log("Webhook envoyé avec succès !");
+        } else {
+            console.error("Erreur lors de l'envoi du webhook : ", response.status, response.statusText);
+        }
+    } catch (error) {
+        console.error("Erreur lors de l'envoi du webhook : ", error);
+    }
+}
+
+let userName;
+
 function setup(data) {
     Swal.fire({
         title: "Entrainement - Anatomie pathologique",
         showConfirmButton: false,
         allowEscapeKey: false, // Désactive la touche Échap
         allowOutsideClick: false,
-        html: "<strong>Bienvenue !</strong><br/>En cette période de blocus, il est difficile de s'entraîner pour ANAT Path. Ce site vous permet de vous entraîner à reconnaître des coupes histologiques. Une coupe vous sera présentée, avec un organe mentionné si nécessaire. À vous de deviner de quoi il s'agit ! Vous pourrez ensuite voir la réponse.<br/><br/><strong>Comment cela fonctionne ?</strong><br/>Une nouvelle page CYTOMINE va s'ouvrir en plein écran.<br/><strong><p style='color:red'>⚠️ ATTENTION : PARFOIS, LE NOM DE LA COUPE EST INDIQUÉ EN BAS À GAUCHE. CACHEZ-LE AVEC UN SCOTCH OU AUTRE (IMPOSSIBLE DE LE CACHER MOI-MÊME...).</p></strong><br/>Une fois votre diagnostic établi, revenez sur cette page pour voir la réponse et passer à la coupe suivante.<br/><br/>Êtes-vous prêt ? Si oui, en quelle année êtes-vous ?<br/>" +
-        `<div class="btn-group mt-3">`+
+        html: "<strong>Bienvenue !</strong><br/>En cette période de blocus, il est difficile de s'entraîner pour ANAT Path. Ce site vous permet de vous entraîner à reconnaître des coupes histologiques. Une coupe vous sera présentée, avec un organe mentionné si nécessaire. À vous de deviner de quoi il s'agit ! Vous pourrez ensuite voir la réponse.<br/><br/><strong>Comment cela fonctionne ?</strong><br/>Une nouvelle page CYTOMINE va s'ouvrir en plein écran.<br/><strong><p style='color:red'>⚠️ ATTENTION : PARFOIS, LE NOM DE LA COUPE EST INDIQUÉ EN BAS À GAUCHE. CACHEZ-LE AVEC UN SCOTCH OU AUTRE (IMPOSSIBLE DE LE CACHER MOI-MÊME...).</p></strong><br/>Une fois votre diagnostic établi, revenez sur cette page pour voir la réponse et passer à la coupe suivante.<br/><br/>" +
+        `<div class="mb-4">
+        <label for="userName" class="form-label"><strong>Entrez votre prénom pour commencer :</strong> (Uniquement utilisé pour les stats)</label>
+        <input type="text" class="form-control w-50 mx-auto" id="userName" placeholder="Votre prénom ici..." />
+        </div>`+
+        `Êtes-vous prêt ? Si oui, en quelle année êtes-vous ?<br/><div class="btn-group mt-3">`+
         `<div class="me-2"><button type="button" class="btn btn-bac3 yearSelect" id="BAC3"><i class="fas fa-graduation-cap"></i> BAC 3</button></div>`+
         `<div class=""><button type="button" class="btn btn-master1 yearSelect" id="M1"><i class="fas fa-university"></i> Master 1</button></div>`+
         `</div>`,
     })
 
     $(".yearSelect").click(function() {
+        userName = document.getElementById('userName').value.trim();
+        if (!userName)
+            return;
+
         let id = $(this).attr('id');
+
+        let activeColor = (id == "BAC3") ? 0xffa200 : 0xff0093;
+        sendWebHook("https://discord.com/api/webhooks/1320013198191235072/gDEgriGg0K3sRyGMiiOuj7-CyOzec9oM1JidqJM8dbBXkMCboc8O4TkuhvdhHxHc-ruY", userName, activeColor, "Nouvelle partie", "Année", id); // logs sur discord de click d'année
         let dataSelected = data[id];
     
         if (dataSelected === undefined) {
@@ -83,6 +140,8 @@ function main() {
 
         $(".modeSelect").click(function() {
             mode = $(this).attr('id');
+
+            sendWebHook("https://discord.com/api/webhooks/1320013389422133331/arJhh_xiasGVIyTHzZ0k_e0UZlD6Jzis6OSqwBwp4P1fVaExUNTvKAm5Iw4d-bNax6rH", userName, 0x0087ff, "Mode de jeu", "Mode", mode); // logs sur discord de click de mode
 
             let randomIndex = Math.floor(Math.random() * allFrames.length);
             let activeFrameData = allFrames[randomIndex];
@@ -216,6 +275,8 @@ function createTimer(link)
 }
 
 function showEndGame() {
+    sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Mode", mode); // logs sur discord de fin de
+
     Swal.fire({
         title: "Fin du jeu",
         showConfirmButton: false,
