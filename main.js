@@ -114,8 +114,10 @@ function setup(data) {
         yearId = id;
         dataYear = dataSelected;
 
+        let frames = getFrames();
+
         // Deep copy
-        allFrames = JSON.parse(JSON.stringify(dataYear["frames"]));
+        allFrames = JSON.parse(JSON.stringify(frames));
         allFrames = allFrames.sort(() => Math.random() - 0.5);
 
         numberOfData = allFrames.length;
@@ -123,19 +125,46 @@ function setup(data) {
     });
 }
 
+function getFrames()
+{
+    let frames = dataYear["frames"];
+    if (!frames || frames.length == 0) {
+        let category = dataYear["category"];
+        frames = [];
+        category.forEach(activeCategory => {
+            if (activeCategory["defaultChecked"]) {
+                frames = frames.concat(activeCategory["frames"]);
+            }
+        });
+    }
+    
+    return frames;
+}
+
 function main() {
     // Ask the play mode (Quizlet or Random)
+    let allowParameters = dataYear["allowParameters"];
+
         Swal.fire({
             title: "Mode de jeu",
             showConfirmButton: false,
             allowEscapeKey: false, // Désactive la touche Échap
             allowOutsideClick: false,
-            html: "Choisissez le mode de jeu<br/><br/>🌟Nombre de coupes : <strong>"+allFrames.length+"🌟</strong><br/><br/><strong>● Quizlet : </strong> Comme sur quizlet (J'avais pas de nom pour définir ça ...), si vous avez une coupe correcte, celle-ci sort de la liste jusqu'à ce que la liste soit vide !<br/><br/><strong>● Aléatoire : </strong> A chaque fois une coupe aléatoire est choisie, tu peux passer 2 fois sur la même<br/><br/><strong>● Aléatoire x1 : </strong>Les coupes sont aléatoires mais ne passent qu'une seule fois ! Tu peux avoir ton score à la fin<br/>" +
+            html: "Choisissez le mode de jeu<br/><br/>🌟Nombre de coupes : <strong>"+allFrames.length+"🌟</strong><br/>"+
+            `${allowParameters?`<div class="me-2"><button type="button" class="btn btn-info settings" style="color:white" ><i class="fa-solid fa-gear"></i>Paramètres</button></div>`:""}`+
+            `<br/><strong>● Quizlet : </strong> Comme sur quizlet (J'avais pas de nom pour définir ça ...), si vous avez une coupe correcte, celle-ci sort de la liste jusqu'à ce que la liste soit vide !<br/><br/><strong>● Aléatoire : </strong> A chaque fois une coupe aléatoire est choisie, tu peux passer 2 fois sur la même<br/><br/><strong>● Aléatoire x1 : </strong>Les coupes sont aléatoires mais ne passent qu'une seule fois ! Tu peux avoir ton score à la fin<br/>` +
             `<div class="btn-group mt-3">`+
             `<div class="me-2"><button type="button" class="btn btn-success modeSelect" id="quizlet">Quizlet</button></div>`+
             `<div class="me-2"><button type="button" class="btn btn-warning modeSelect" id="random">Aléatoire</button></div>`+
             `<div class=""><button type="button" class="btn btn-danger modeSelect" id="random1">Aléatoire x1</button></div>`+
             `</div>`,
+        });
+
+        $(".settings").click(function() {
+            if (!allowParameters)
+                return;
+
+            showSettings();
         });
 
         $(".modeSelect").click(function() {
@@ -147,6 +176,71 @@ function main() {
             let activeFrameData = allFrames[randomIndex];
 
             showFrame(activeFrameData, randomIndex);
+        });
+}
+
+function showSettings()
+{
+        let htmlContent = "";
+        let category = dataYear["category"];
+        let forEachIndex = 0;
+        let frames = getFrames();
+
+        category.forEach(activeCategory => {
+            let checked = activeCategory["defaultChecked"] ? "checked" : "";
+            let frames = activeCategory["frames"];
+            htmlContent += `<div class="form-check">`+
+            `<input class="form-check-input categoryCheck" type="checkbox" value="${activeCategory["displayName"]}" id="${forEachIndex}" ${checked}>`+
+            `<label class="form-check-label" for="${activeCategory["displayName"]}"><strong>${activeCategory["displayName"]}</strong> (${frames.length})</label>`+
+            `</div>`;
+            forEachIndex ++;
+        });
+
+        Swal.fire({
+            title: "Paramètres",
+            showConfirmButton: false,
+            allowEscapeKey: false, // Désactive la touche Échap
+            allowOutsideClick: false,
+            html: "Vous pouvez ici choisir les catégories que vous souhaitez avoir lors du jeu !<br/><br/>🌟Nombre de coupes : <span class='numberFrame'><strong>"+frames.length+"</strong></span>🌟<br/><br/>"+
+            htmlContent+
+            `<br/><div class="btn-group mt-3">`+
+            `<div class=""><button type="button" class="btn btn-danger saveParms">Fermer</button></div>`+
+            `</div>`,
+        });
+
+        // On checked
+        $(".categoryCheck").change(function() {
+            let id = $(this).attr('id');
+            let isChecked = $(this).prop('checked');
+            category[id]["defaultChecked"] = isChecked;
+
+            let frames = getFrames();
+            $(".numberFrame").html("<strong>"+frames.length+"</strong>");
+        });
+
+        $(".saveParms").click(function() {
+            let frames = getFrames();
+
+            if (frames.length == 0) {
+                Swal.fire({
+                    title: "Erreur",
+                    icon: "error",
+                    text: "Vous devez sélectionner au moins une catégorie pour continuer."
+                }).then(() => {
+                    showSettings();
+                    return;
+                });
+
+                return;
+            }
+
+            // Deep copy
+            allFrames = JSON.parse(JSON.stringify(frames));
+            allFrames = allFrames.sort(() => Math.random() - 0.5);
+
+            numberOfData = allFrames.length;
+            
+            main();
         });
 }
 
@@ -275,23 +369,27 @@ function createTimer(link)
 }
 
 function showEndGame() {
+
+    let allFrames = getFrames();
+
     if (mode == "random1")
-        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Score", score); // logs sur discord de fin de
+        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Score", score+"/"+numberOfData); // logs sur discord de fin de
     else
-        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Mode", mode); // logs sur discord de fin de
+        sendWebHook("https://discord.com/api/webhooks/1320013337081286696/SDtLBhmXIn2bP09KEWgoEk8WLiXv4M3TUrPGJVseATXMMybXW_9C32q76BHrGdxyqWk_", userName, 0xa6ff00, "Fin de partie", "Mode", mode+ " ("+allFrames.length+" coupes)"); // logs sur discord de fin de
 
     Swal.fire({
         title: "Fin du jeu",
         showConfirmButton: false,
         allowEscapeKey: false, // Désactive la touche Échap
         allowOutsideClick: false,
-        html: `🌟Félicitations ! Vous avez terminé toutes les coupes ! Vous pouvez dorénavent recommencer !<br/><br/>${(mode == "random1")?"💯 SCORE : <strong><span style='color:green'>"+score+"</span>/"+numberOfData+"</strong><br/><br/>":""}<div class="d-flex justify-content-center">`+
+        html: `🌟Félicitations ! Vous avez terminé toutes les coupes ! Vous pouvez dorénavent recommencer !<br/><br/>${(mode == "random1")?"💯 SCORE : <strong><span style='color:green'>"+score+"</span>/"+numberOfData+" coupes</strong><br/><br/>":""}<div class="d-flex justify-content-center">`+
             `<div class="me-2"><button type="button" class="btn btn-info restart">Recommencer</button></div>`+
             `</div>`,
     });
 
     $(".restart").click(function() {
-        allFrames = JSON.parse(JSON.stringify(dataYear["frames"]));;
+        let frames = getFrames();
+        allFrames = JSON.parse(JSON.stringify(frames));;
         allFrames = allFrames.sort(() => Math.random() - 0.5);
 
         numberOfData = allFrames.length;
