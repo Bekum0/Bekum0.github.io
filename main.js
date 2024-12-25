@@ -170,7 +170,7 @@ function main() {
         $(".modeSelect").click(function() {
             mode = $(this).attr('id');
 
-            sendWebHook("https://discord.com/api/webhooks/1320013389422133331/arJhh_xiasGVIyTHzZ0k_e0UZlD6Jzis6OSqwBwp4P1fVaExUNTvKAm5Iw4d-bNax6rH", userName, 0x0087ff, "Mode de jeu", "Mode", mode); // logs sur discord de click de mode
+            sendWebHook("https://discord.com/api/webhooks/1320013389422133331/arJhh_xiasGVIyTHzZ0k_e0UZlD6Jzis6OSqwBwp4P1fVaExUNTvKAm5Iw4d-bNax6rH", userName, 0x0087ff, "Mode de jeu", "Mode", mode+ " ("+allFrames.length+")"); // logs sur discord de click de mode
 
             let randomIndex = Math.floor(Math.random() * allFrames.length);
             let activeFrameData = allFrames[randomIndex];
