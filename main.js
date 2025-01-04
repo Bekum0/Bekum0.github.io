@@ -174,6 +174,7 @@ function main() {
 
             let randomIndex = Math.floor(Math.random() * allFrames.length);
             let activeFrameData = allFrames[randomIndex];
+            score = 0;
 
             showFrame(activeFrameData, randomIndex);
         });
