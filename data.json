@@ -5,366 +5,417 @@
         "category" : [
             {
                 "displayName": "Nécrose et apoptose",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21786639",
                         "name": "280 - Infarctus cardiaque",
-                        "bodyPart": "Coeur"
+                        "bodyPart": "Coeur",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21008600",
                         "name": "328 - Nécrose fibrinoïde",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21793659",
                         "name": "479 - Pancréatite aiguë nécrotico-hémorragique",
-                        "bodyPart": "Pancréas"
+                        "bodyPart": "Pancréas",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21793112",
                         "name": "326 - Hépatite chronique agressive",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21006890",
                         "name": "162 - Tuberculose ganglionnaire",
-                        "bodyPart": "Ganglion"
+                        "bodyPart": "Ganglion",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21802872",
                         "name": "2 - Nécrose de coagulation",
-                        "bodyPart": "Rein"
+                        "bodyPart": "Rein",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Adaptation tissulaire",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21834552",
                         "name": "245 - Hyperplasie nodulaire de la prostate",
-                        "bodyPart": "Prostate"
+                        "bodyPart": "Prostate",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21835027",
                         "name": "417 - Goître multinodulaire",
-                        "bodyPart": "Thyroide"
+                        "bodyPart": "Thyroide",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21835559",
                         "name": "437 - Hyperplasie de la gencive",
-                        "bodyPart": "Gencive"
+                        "bodyPart": "Gencive",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21836162",
                         "name": "463 - Hyperthyroïdie",
-                        "bodyPart": "Thyroide"
+                        "bodyPart": "Thyroide",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21836808",
                         "name": "478 - Oesophage de Barrett",
-                        "bodyPart": "Oesophage"
+                        "bodyPart": "Oesophage",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21837215",
                         "name": "513 - Hyperplasie de l'endomètre",
-                        "bodyPart": "Uterus"
+                        "bodyPart": "Uterus",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Surcharge et dépôts",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21819689",
                         "name": "259 - Strie lipidique (aorte de lapin)",
-                        "bodyPart": "Artère"
+                        "bodyPart": "Artère",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21008412",
                         "name": "258 - Stéatose hépatique microvacuolaire",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21811622",
                         "name": "006 - Stéatose hépatique macrovacuolaire",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21820085",
                         "name": "272 - Cirrhose hépatique sur déficit en alpha-1 antitrypsine",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21019411",
                         "name": "375 - Hémosidérose rate (Perls)",
-                        "bodyPart": "Rate"
+                        "bodyPart": "Rate",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21007835",
                         "name": "194 - Hémosidérose rate (HE)",
-                        "bodyPart": "Rate"
+                        "bodyPart": "Rate",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Inflammation",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21852866",
                         "name": "120 - Sarcoïdose ganglion lymphatique",
-                        "bodyPart": "Ganglion"
+                        "bodyPart": "Ganglion",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21008788",
                         "name": "377 - Tuberculose ganglionnaire",
-                        "bodyPart": "Ganglion"
+                        "bodyPart": "Ganglion",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21853328",
                         "name": "167 - Ulcération et tissu de granulation de la gencive",
-                        "bodyPart": "Gencive"
+                        "bodyPart": "Gencive",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21853749",
                         "name": "319 - Ulcère gastrique",
-                        "bodyPart": "Estomac"
+                        "bodyPart": "Estomac",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21854716",
                         "name": "386 - Appendicite aiguë et péritonite",
-                        "bodyPart": "Appendice"
+                        "bodyPart": "Appendice",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21854190",
                         "name": "346 - Broncho-pneumonie aiguë",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Cardiologie",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21941195",
                         "name": "023 - Thrombus sur plaque d'athéromatose",
-                        "bodyPart": "Artère"
+                        "bodyPart": "Artère",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21941433",
                         "name": "047 - Thrombus reperméabilisé",
-                        "bodyPart": "Artère"
+                        "bodyPart": "Artère",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21941620",
                         "name": "289 - Médiacalcinose des artères utérines",
-                        "bodyPart": "Utérus"
+                        "bodyPart": "Utérus",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21941780",
                         "name": "307 - Embolie pulmonaire",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21009369",
                         "name": "D060 - Infarctus myocardique",
-                        "bodyPart": "Coeur"
+                        "bodyPart": "Coeur",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21055352",
                         "name": "D063 - Endocardite",
-                        "bodyPart": "Coeur"
+                        "bodyPart": "Coeur",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21055527",
                         "name": "D065 - Néphro-angiosclérose",
-                        "bodyPart": "Rein"
+                        "bodyPart": "Rein",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Trouble de l'immunité",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/23750359",
                         "name": "483 - Poumon : asthme",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/23754014",
                         "name": "484 - Thyroïde d'Hashimoto",
-                        "bodyPart": "Thyroide"
+                        "bodyPart": "Thyroide",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21906207",
                         "name": "486 - Gastrite atrophique",
-                        "bodyPart": "Estomac"
+                        "bodyPart": "Estomac",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21906473",
                         "name": "487 - Arthrite rhumatoïde du genou",
-                        "bodyPart": "Synoviale"
+                        "bodyPart": "Synoviale",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21905982",
                         "name": "485 - Crise de rejet aigu d'un foie greffé",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21901637",
                         "name": "482 - Rejet chronique d'un foie greffé",
-                        "bodyPart": "Foie"
+                        "bodyPart": "Foie",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Respiratoire",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21019711",
                         "name": "D047 - Aspergillome",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21020691",
                         "name": "D048 - 208 - Infarctus pulmonaire",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21009984",
                         "name": "D049 - 347 - Anthraco-silicose",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/378331297",
                         "name": "D050 - Pneumonie lobaire",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     }, 
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21010269",
                         "name": "D052 - Tuberculose miliaire",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21055182",
                         "name": "D054 - Adénocarcinome pulmonaire",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21854190",
                         "name": "346 - Bronchopneumonie",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Pathologies digestives",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21055697",
                         "name": "DO66 - Appendicite aiguë",
-                        "bodyPart": "Appendice"
+                        "bodyPart": "Appendice",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21055884",
                         "name": "DO67 - Ulcère gastrique",
-                        "bodyPart": "Estomac"
+                        "bodyPart": "Estomac",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/23757145",
                         "name": "DO68 - Adénocarcinome diffus (à cellules en bague) de l'estomac",
-                        "bodyPart": "Estomac"
+                        "bodyPart": "Estomac",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21056075",
                         "name": "DO69 - Adénocarcinome diffus (à cellules en bague) de l'estomac (PAS)",
-                        "bodyPart": "Estomac"
+                        "bodyPart": "Estomac",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/24154320",
                         "name": "DO71 - Maladie de Crohn (Iléon terminal)",
-                        "bodyPart": "Intestin"
+                        "bodyPart": "Intestin",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21010667",
                         "name": "DO72 - Recto-colite ulcéro-hémorragique",
-                        "bodyPart": "Intestin"
+                        "bodyPart": "Intestin",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Tumeurs bénignes, dysplasies et cancérogénèse",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21918234",
                         "name": "150 - Adénome pléomorphe (tumeur mixte) de la parotide",
-                        "bodyPart": "Parotide"
+                        "bodyPart": "Parotide",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21918554",
                         "name": "174 - Kyste dermoïde de l'ovaire",
-                        "bodyPart": "Ovaire"
+                        "bodyPart": "Ovaire",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21918876",
                         "name": "331 - Papillome hyperkératosique (verrue vulgaire) de la peau",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21919341",
                         "name": "379 - Dysplasie sévère (carcinome in situ) du col utérin",
-                        "bodyPart": "Uterus"
+                        "bodyPart": "Uterus",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21919713",
                         "name": "464 - Adénome parathyroïdien",
-                        "bodyPart": "Parathyroide"
+                        "bodyPart": "Parathyroide",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21920133",
                         "name": "514 - Léiomyome utérin",
-                        "bodyPart": "Uterus"
+                        "bodyPart": "Uterus",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Cancers",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21930995",
                         "name": "300 - Adénocarcinome du colon",
-                        "bodyPart": "Colon"
+                        "bodyPart": "Colon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21931164",
                         "name": "348 - Carcinome épidermoïde bronchique",
-                        "bodyPart": "Poumon"
+                        "bodyPart": "Poumon",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21931451",
                         "name": "363 - Mélanome malin de la peau",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21932243",
                         "name": "442 - Carcinome basocellulaire de la peau",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21931997",
                         "name": "441 - Carcinome épidermoïde du col utérin",
-                        "bodyPart": "Uterus"
+                        "bodyPart": "Uterus",
+                        "defaultChecked": true
                     }
                 ]
             }
@@ -376,304 +427,347 @@
         "category" : [
             {
                 "displayName": "Propédeutique et lésion gingivale",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45665705",
                         "name": "D096 - Epulis fibromateux",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45661591",
                         "name": "D108 - Epulis fibro-epithéliale",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/45666360",
                         "name": "D109 - Botryomycome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Lésions blanche et tumorale",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46667897",
                         "name": "D015 - Gencive, Mycose",
-                        "bodyPart": "Gencive"
+                        "bodyPart": "Gencive",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46667909",
                         "name": "D017 - Lichen Plan",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46667931",
                         "name": "D018 - Gencive, Leucoplasie",
-                        "bodyPart": "Gencive"
+                        "bodyPart": "Gencive",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46667959",
                         "name": "D036 - Papillome",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/368800341",
                         "name": "D081 - Carcinome épidermoïde in situ",
-                        "bodyPart": "Bouche"
+                        "bodyPart": "Bouche",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46667979",
                         "name": "D102 - Ulcère linguale",
-                        "bodyPart": "Langue"
+                        "bodyPart": "Langue",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46668023",
                         "name": "D103 - Ulcèration néoplasique",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46668073",
                         "name": "D104 - Carcinome verruqeux",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/45658455/image/46668101",
                         "name": "D105 - Carcinome épidermoïde",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Lésions rouges et pigmentées",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47752211",
                         "name": "D038 - Tatouage",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47752095",
                         "name": "D106 - Naevus naevocellulaire de type dermique",
-                        "bodyPart": "Lèvre"
+                        "bodyPart": "Lèvre",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/366388135",
                         "name": "D107 - Pemphigoïde bulleuse",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/366390972",
                         "name": "D111 - Naevus composé",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/366395219",
                         "name": "D112 - Mélanome malin",
-                        "bodyPart": "Peau"
+                        "bodyPart": "Peau",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Tumeurs des tissus mous",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751999",
                         "name": "D077 - Schwannome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751981",
                         "name": "D078 - Névrome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751963",
                         "name": "D079 - Neurofibrome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751949",
                         "name": "D080 - Hémangiome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751909",
                         "name": "D089 - Lymphangiome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751893",
                         "name": "D094 - Lipome",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47752047",
                         "name": "D046 - Kyste thyreoglosse",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/47750146/image/47751869",
                         "name": "D099 - Tumeur à cellules granuleuses",
-                        "bodyPart": ""
+                        "bodyPart": "",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Kystes et tumeurs odontogenes",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604043",
                         "name": "D021 - Kyste périapical",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604121",
                         "name": "D022 - Kératokyste",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604099",
                         "name": "D023 - Fibrome améloblastique",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604077",
                         "name": "D024 - Améloblastome",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604057",
                         "name": "D025 - Kyste folliculaire",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52603723/image/52604139",
                         "name": "D020 - Kyste odontogène calcifiant",
-                        "bodyPart": "Dent"
+                        "bodyPart": "Dent",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Pathologies osseuses",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276672",
                         "name": "D088 - Fibrome ossifiant",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/72526325",
                         "name": "D045 - Kyste anévrysmal",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53191986",
                         "name": "D082 - Histiocytose langerhansienne",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53191948",
                         "name": "D084 - Ostéite chronique",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276700",
                         "name": "D085 - Ostéonecrose sur bisphosphonate",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53276682",
                         "name": "D092 - Plasmocytome",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/53191806/image/53192012",
                         "name": "D007 - Ostéosarcome",
-                        "bodyPart": "Os"
+                        "bodyPart": "Os",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Glandes salivaires",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604729",
                         "name": "D002 - Mucocele",
-                        "bodyPart": "Lèvre"
+                        "bodyPart": "Lèvre",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604745",
                         "name": "D003 - Tumeur de Warthin",
-                        "bodyPart": "Glande salivaire"
+                        "bodyPart": "Glande salivaire",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604873",
                         "name": "D004 - Cylindrome",
-                        "bodyPart": "Glande salivaire"
+                        "bodyPart": "Glande salivaire",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/52604887",
                         "name": "D005 - Sialadenite chronique",
-                        "bodyPart": "Glande salivaire"
+                        "bodyPart": "Glande salivaire",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/366415974",
                         "name": "D006 - Tumeur mixte",
-                        "bodyPart": "Glande salivaire"
+                        "bodyPart": "Glande salivaire",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52604497/image/374120861",
                         "name": "D001 - Sjögren",	
-                        "bodyPart": "Glande salivaire"
+                        "bodyPart": "Glande salivaire",
+                        "defaultChecked": true
                     }
                 ]
             },
             {
                 "displayName": "Pathologies ganglionnaires",
-                "defaultChecked": true,
                 "frames": [
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605387",
                         "name": "D120 - Sarcoïdose",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605365",
                         "name": "D229 - Ganglion normal",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605295",
                         "name": "D411 - Maladie griffe du chat",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/72084156",
                         "name": "D026 - Leucémie lymphoïde chronique",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605261",
                         "name": "D027 - Lymphome folliculaire",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/52605241",
                         "name": "D030 - Lymphome Hodgkinien",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     },
                     {
                         "link": "https://cytomine.uclouvain.be/#/project/52605157/image/75051303",
                         "name": "D101 - Métastase ganglionnaire d'un carcinome épidermoïde",
-                        "bodyPart": "Ganglion lympathique"
+                        "bodyPart": "Ganglion lympathique",
+                        "defaultChecked": true
                     }
                 ]
             }
