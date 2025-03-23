@@ -904,3 +904,23 @@ body.dark-theme .suggestion-button:hover {
         right: 15px;
     }
 }
+
+.settings-info {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 8px 15px;
+    background-color: rgba(var(--info-color-rgb), 0.1);
+    border-radius: 8px;
+    border-left: 4px solid var(--info-color);
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    margin-bottom: 0;
+}
+
+body.dark-theme .settings-info {
+    background-color: rgba(59, 130, 246, 0.15);
+    border-left-color: #3b82f6;
+}
