@@ -1,7 +1,22 @@
 :root {
-    --primary-color: #2c6ea4; /* Bleu médical plus doux */
-    --secondary-color: #3d8bbd; /* Bleu légèrement plus clair */
-    --accent-color: #f5a623; /* Orange doré pour les accents */
+    --primary-color: #3498db;
+    --primary-color-rgb: 52, 152, 219;
+    --secondary-color: #2ecc71;
+    --accent-color: #f39c12; /* Définition de l'accent-color pour le bouton BAC3 */
+    --warning-color: #e74c3c;
+    --warning-color-light: rgba(231, 76, 60, 0.1);
+    --info-color: #3498db;
+    --info-color-rgb: 52, 152, 219;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --text-color-secondary: #555555;
+    --border-color: #e0e0e0;
+    --highlight-background: rgba(52, 152, 219, 0.1);
+    --feature-background: rgba(52, 152, 219, 0.08);
+    --feature-border: #3498db;
+    --settings-background: rgba(52, 152, 219, 0.1);
+    --settings-border: #3498db;
     --success-color: #4CAF50; /* Vert pour les succès */
     --error-color: #E57373; /* Rouge adouci pour les erreurs */
     --text-light: #ffffff;
@@ -323,6 +338,7 @@ copyright:hover {
 
 .btn-bac3 {
     background-color: var(--accent-color);
+    color: white; /* Assurer que le texte est visible */
 }
 
 .btn-master1 {
@@ -925,6 +941,15 @@ body.dark-theme .settings-info {
     border-left-color: #3b82f6;
 }
 
+body.dark-theme .small-text {
+    color: #cbd5e1; /* Couleur plus claire pour le texte secondaire en mode sombre */
+}
+
+/* Amélioration du contraste de l'icône info-circle en mode sombre */
+body.dark-theme .small-text .fa-info-circle {
+    color: #60a5fa; /* Bleu plus vif pour l'icône en mode sombre */
+}
+
 .features-highlight {
     background-color: rgba(var(--primary-color-rgb), 0.08);
     border-radius: 12px;
@@ -969,6 +994,10 @@ body.dark-theme .features-highlight {
     margin-bottom: 3px;
 }
 
+body.dark-theme .feature-title {
+    color: #e2e8f0; /* Couleur claire pour le texte en mode sombre */
+}
+
 .feature-list li {
     padding: 6px 0;
     display: flex;
@@ -979,4 +1008,76 @@ body.dark-theme .features-highlight {
 .feature-list li i {
     margin-top: 3px;
     font-size: 0.9rem;
+}
+
+/* Mode sombre - ajustement des variables uniquement */
+body.dark-theme {
+    --feature-background: rgba(59, 130, 246, 0.12);
+    --feature-border: #3b82f6;
+    --settings-background: rgba(59, 130, 246, 0.15);
+    --settings-border: #3b82f6;
+}
+
+/* Styles pour les conteneurs d'informations */
+.features-highlight {
+    background-color: var(--feature-background);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-left: 4px solid var(--feature-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.settings-info {
+    background-color: var(--settings-background);
+    border-radius: 8px;
+    padding: 8px 15px;
+    border-left: 4px solid var(--settings-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Mise à jour des styles pour les listes de fonctionnalités */
+.feature-list {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 3px;
+}
+
+.feature-list li {
+    padding: 6px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.feature-list li i {
+    margin-top: 3px;
+    font-size: 0.9rem;
+}
+
+/* Assurer que le bouton BAC3 a un contenu visible */
+.btn-bac3:empty::after {
+    content: "BAC 3";
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Ajouter l'icône au bouton s'il est vide */
+.btn-bac3:empty::before {
+    content: "\f19d"; /* Code Unicode pour l'icône graduation-cap */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
 }
