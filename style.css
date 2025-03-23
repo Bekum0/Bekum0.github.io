@@ -924,3 +924,59 @@ body.dark-theme .settings-info {
     background-color: rgba(59, 130, 246, 0.15);
     border-left-color: #3b82f6;
 }
+
+.features-highlight {
+    background-color: rgba(var(--primary-color-rgb), 0.08);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.feature-list {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.feature-list li {
+    padding: 6px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-list li i {
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 0.9rem;
+}
+
+body.dark-theme .features-highlight {
+    background-color: rgba(59, 130, 246, 0.12);
+    border-left-color: #3b82f6;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 3px;
+}
+
+.feature-list li {
+    padding: 6px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.feature-list li i {
+    margin-top: 3px;
+    font-size: 0.9rem;
+}
