@@ -418,6 +418,41 @@
                         "defaultChecked": true
                     }
                 ]
+            },
+            {
+                "displayName": "Système uro-génital",
+                "frames": [
+                    {
+                        "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21005564",
+                        "name": "065 - Adénocarcinome prostatique",
+                        "bodyPart": "Prostate",
+                        "defaultChecked": true
+                    },
+                    {
+                        "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21005832",
+                        "name": "073 - Carcinome papillaire de la vessie",
+                        "bodyPart": "Vessie",
+                        "defaultChecked": true
+                    },
+                    {
+                        "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21006700",
+                        "name": "075 - Séminome testiculaire",
+                        "bodyPart": "Testicule",
+                        "defaultChecked": true
+                    },
+                    {
+                        "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21019239",
+                        "name": "117 - Adénocarcinome rénal à cellules claires",
+                        "bodyPart": "Rein",
+                        "defaultChecked": true
+                    },
+                    {
+                        "link": "https://cytomine.uclouvain.be/#/project/15272339/image/21007448",
+                        "name": "169 - Hyperplasie nodulaire de la prostate",
+                        "bodyPart": "Prostate",
+                        "defaultChecked": true
+                    }
+                ]
             }
         ]
     },
